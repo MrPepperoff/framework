@@ -1,7 +1,5 @@
 <?php
-
 foreach($data as $item){
-
 ?>
 
 <li class="item-vertical  with-sub-menu hover">

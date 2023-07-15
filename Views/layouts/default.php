@@ -4,7 +4,7 @@
     
     <!-- Basic page needs
     ============================================ -->
-    <title><?php echo $data['title'] ?></title>
+    <title><?php echo $data['title']; ?></title>
     <meta charset="utf-8">
     <meta name="keywords" content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
     <meta name="description" content="Revo is a powerful Multi-purpose HTML5 Template with clean and user friendly design. It is definite a great starter for any eCommerce web project." />
@@ -275,24 +275,23 @@
                         <ul class="list-inlines">
                             <li class="hidden-xs">
                             <span class="hidden-sm">
-                            Free 3 day delirery and free returns within the US
+                            Бесплатная 3-дневная доставка и бесплатный возврат в США
                             </span>
-                            <a class="link-lg" href="register.html">Register </a> or 
-                            <a class="link-lg" href="login.html">Login </a>
+                            <a class="link-lg" href="register.html">Регистрация </a> или 
+                            <a class="link-lg" href="login.html">Логин </a>
                             </li>
                         </ul>
                     </div>
                     <div class="header-top-right collapsed-block col-lg-6 col-md-6 col-sm-7 col-xs-12">
                         <ul class="top-link list-inline">
-                            <li class="log login"><a class="link-lg" href="login.html">Login </a></li>
+                            <li class="log login"><a class="link-lg" href="login.html">Логин </a></li>
                             <li class="account" id="my_account">
-                            <a href="my-account.html" title="My Account " class="btn-xs dropdown-toggle" data-toggle="dropdown"> <span class="hidden-xs">My Account </span> <span class="fa fa-angle-down"></span></a>
+                            <a href="my-account.html" title="My Account " class="btn-xs dropdown-toggle" data-toggle="dropdown"> <span class="hidden-xs">Мой аккаунт </span> <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
-                                    <li><a href="my-account.html">My Account </a></li>
-                                    <li><a href="order-history.html">Order History </a></li>
-                                    <li><a href="horder-history.html">Transactions </a></li>
-                                    <li><a href="order-information.html">Order Information </a></li>
-                                    <li class="checkout"><a href="checkout.html" class="btn-link" title="Checkout "><span>Checkout </span></a></li>
+                                    <li><a href="my-account.html">Мой аккаунт </a></li>
+                                    <li><a href="order-history.html">История покупок</a></li>
+                                    <li><a href="horder-history.html">Оплата </a></li>
+                                    <li><a href="order-information.html">Информация о заказе</a></li>
                                      
                                 </ul>
                             </li>
@@ -301,13 +300,13 @@
                                 <div class="btn-group languages-block ">
                                     <form action="index.html" method="post" enctype="multipart/form-data" id="bt-language">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <img src="resources/image/catalog/flags/gb.png" alt="English" title="English">
-                                            <span class="">English</span>
+                                            <img src="resources/image/catalog/flags/ru.png" alt="Russian" title="Russian">
+                                            <span class="">Русский</span>
                                             <span class="fa fa-angle-down"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="index.html"><img class="image_flag" src="resources/image/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
-                                            <li> <a href="index.html"> <img class="image_flag" src="resources/image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+                                            <li><a href="index.html"><img class="image_flag" src="resources/image/catalog/flags/gb.png" alt="English" title="English" /> Английский </a></li>
+                                            <li> <a href="index.html"> <img class="image_flag" src="resources/image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Арабский </a> </li>
                                         </ul>
                                     </form>
                                 </div>
@@ -317,12 +316,13 @@
                                 <div class="btn-group currencies-block">
                                     <form action="index.html" method="post" enctype="multipart/form-data" id="currency">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                            <span class="icon icon-credit "></span> $ US Dollar  <span class="fa fa-angle-down"></span>
+                                            <span class="icon icon-credit "></span>$&ensp;-&ensp;Доллар<span class="fa fa-angle-down"></span>
                                         </a>
                                         <ul class="dropdown-menu btn-xs">
-                                            <li> <a href="#">(€)&nbsp;Euro</a></li>
-                                            <li> <a href="#">(£)&nbsp;Pounds    </a></li>
-                                            <li> <a href="#">($)&nbsp;US Dollar </a></li>
+                                            <li class="currency"> <a href="#"><span class="currency_item">&#8381;</span>&ensp;-&ensp;Рубль</a></li>
+                                            <li class="currency"> <a href="#"><span class="currency_item">&#8364;</span>&ensp;-&ensp;Евро</a></li>
+                                            <li class="currency"> <a href="#"><span class="currency_item">&#163;</span>&ensp;-&ensp;Фунт</a></li>
+                                            <li class="currency"> <a href="#"><span class="currency_item">$</span>&ensp;-&ensp;Доллар</a></li>
                                         </ul>
                                     </form>
                                 </div>
@@ -742,7 +742,7 @@
 
 
 
-                                                            <!-- <li class="item-vertical  with-sub-menu hover">
+                                                            <li class="item-vertical  with-sub-menu hover">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
                                                                     <span>
@@ -847,7 +847,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </li> -->
+                                                            </li>
                                                             <!-- <li class="item-vertical">
                                                                 <p class="close-menu">1</p>
                                                                 <a href="#" class="clearfix">

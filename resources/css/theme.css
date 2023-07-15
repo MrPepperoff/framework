@@ -9169,3 +9169,12 @@ div.module.custom-listingtab {
   height: auto;
   width: auto !important;
 }
+.currency{
+  
+}
+.currency .currency_item{
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
