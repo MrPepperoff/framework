@@ -1,8 +1,8 @@
 <?php
-foreach($data as $item){
+// foreach($data as $item) :
 ?>
 
-<li class="item-vertical  with-sub-menu hover">
+<!-- <li class="item-vertical  with-sub-menu hover">
     <p class="close-menu"></p>
     <a href="#" class="clearfix">
         <span>
@@ -107,6 +107,24 @@ foreach($data as $item){
             </div>
         </div>
     </div>
-</li>
+</li> -->
 
-<?php endforeach;?>
+<?php //endforeach;?>
+
+
+<style>
+	li{
+		display: inline-block;
+	}
+</style>
+<ul>
+	
+
+<?php
+
+foreach($data as $item){
+	echo "<li><a href='http://localhost/framework/{$item['href']}'>{$item['name']}</a></li>";
+}
+?>
+
+</ul>

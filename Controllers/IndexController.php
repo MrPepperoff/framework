@@ -69,7 +69,6 @@ class IndexController extends Controller{
 	}
 
 	public function cartaddAction(){
-		// страница не найдена
 
 		if(isset($_POST['id_product'])){
 			$model = new OrdersModel();

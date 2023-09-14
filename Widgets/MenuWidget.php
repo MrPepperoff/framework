@@ -7,7 +7,6 @@ class MenuWidget extends Widget{
 
 		$model = new MenuModel();
 
-
 		$data = $model->selectItems($alias);
 		Widget::pathIncudeView($menu_name, $data);
 	}

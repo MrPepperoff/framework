@@ -44,7 +44,6 @@
     <link href="resources/css/header/header1.css" rel="stylesheet">
     <link id="color_scheme" href="resources/css/theme.css" rel="stylesheet"> 
     <link href="resources/css/responsive.css" rel="stylesheet">
-
     <!-- Google web fonts
     ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,600,700" rel='stylesheet' type='text/css'>
@@ -117,8 +116,8 @@
                                 </div>
                                 <div class="owl2-controls">
                                     <div class="owl2-nav">
-                                        <div class="owl2-prev" style=""></div>
-                                        <div class="owl2-next" style=""></div>
+                                        <div class="owl2-prev"></div>
+                                        <div class="owl2-next"></div>
                                     </div>
                                     <div class="owl2-dots" style="display: none;"></div>
                                 </div>
@@ -741,8 +740,8 @@
 
 
 
-
-                                                            <li class="item-vertical  with-sub-menu hover">
+                                                            <?php echo MenuWidget::render("deportament_menu");?>
+                                                            <!-- <li class="item-vertical  with-sub-menu hover">
                                                                 <p class="close-menu"></p>
                                                                 <a href="#" class="clearfix">
                                                                     <span>
@@ -847,7 +846,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </li>
+                                                            </li> -->
                                                             <!-- <li class="item-vertical">
                                                                 <p class="close-menu">1</p>
                                                                 <a href="#" class="clearfix">
@@ -1327,9 +1326,8 @@
     <!-- Main Container  -->
     <div class="main-container container">
         <ul class="breadcrumb">
-            <li><a href="#"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Page</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="index.php"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><?php echo $data['title']; ?></a></li>
         </ul>
         
         <div class="row">  
@@ -1488,7 +1486,7 @@
                         <div class="module custom_categories ">
                             <div class="categories-footer">
                                 <div class="footer-cates-w">
-                                    <nav role="navigation">
+                                    <nav role="navigation" class ='footer_menu'>
                                         <!-- Вызов меню -->
                                         <?php echo MenuWidget::render("footer_menu");?>
                                         

@@ -16,8 +16,7 @@ class MenuModel extends Model{
 					img, 
 					icon 
 				FROM menu INNER JOIN menu_items ON menu.id = menu_items.menu_id
-				WHERE alias = '".$alias."'
-				";
+				WHERE alias = '".$alias."'";
 
 		$data = $this-> getMultiData ($sql);
 

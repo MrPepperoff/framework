@@ -2123,17 +2123,17 @@ div.required .control-label:before {
     background: white;
     position: relative;
     border-top: 0; }
-  .container-megamenu.vertical .vertical-wrapper ul li.item-vertical {
+  .container-megamenu.vertical .vertical-wrapper ul > li {
     border-top: 0;
     min-height: 37px; }
-  .container-megamenu.vertical .vertical-wrapper ul li.item-vertical > a {
+  .container-megamenu.vertical .vertical-wrapper ul > li > a {
     color: #444;
     padding: 0 18px;
     line-height: 48px;
     border-bottom: 0; }
-  .container-megamenu.vertical .vertical-wrapper ul li.item-vertical > a:hover {
+  .container-megamenu.vertical .vertical-wrapper ul > li > a:hover {
     color: #ff5e00; }
-  .container-megamenu.vertical .vertical-wrapper ul li.item-vertical > a strong {
+  .container-megamenu.vertical .vertical-wrapper ul > li > a strong {
     font-weight: 600;
     padding-left: 30px; }
   .container-megamenu.vertical .vertical-wrapper ul.megamenu {
@@ -9169,12 +9169,14 @@ div.module.custom-listingtab {
   height: auto;
   width: auto !important;
 }
-.currency{
-  
-}
+
 .currency .currency_item{
   position: relative;
   top: 5px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.footer_menu li{
+  display: inline-block;
 }

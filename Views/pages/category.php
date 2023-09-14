@@ -1,19 +1,7 @@
 <a href="javascript:void(0)" class="open-sidebar hidden-lg hidden-md" style="margin-bottom: 15px;"><i class="fa fa-bars"></i>Sidebar</a>
 <div class="sidebar-overlay "></div>
 <div class="products-category">
-    <h3 class="title-category "><?php echo (isset($_GET['id']))?  $data['title'] : 'Ошибка категории'; ?></h3>
-    <div class="category-derc">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="banners">
-                    <div>
-                        <a href="#"><img src="resources/image/catalog/demo/category/img-cate1.png" alt="img cate"><br></a>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
+    <h3 class="title-category "><?php echo $data['title']; ?></h3>
     <!-- Filters -->
     <div class="product-filter product-filter-top filters-panel">
         <div class="row">
@@ -64,19 +52,19 @@
                 <div class="product-item-container">
                     <div class="left-block left-b">
                         <div class="product-card__gallery product-card__left">
-                            <div class="item-img thumb-active" data-src="resources/image/<?php echo $product['img'];?>">
-                                <img src="resources/image/<?php echo $product['img'];?>"  alt="image">
+                            <div class="item-img thumb-active" data-src="resources/image/products/<?php echo $product['img'];?>">
+                                <img src="resources/image/products/<?php echo $product['img'];?>"  alt="image">
                             </div>
-                            <div class="item-img" data-src="resources/image/<?php echo $product['img_little_2'];?>">
-                                <img src="resources/image/<?php echo $product['img_little_2'];?>"  alt="image">
+                            <div class="item-img" data-src="resources/image/products/<?php echo $product['img_little_2'];?>">
+                                <img src="resources/image/products/<?php echo $product['img_little_2'];?>"  alt="image">
                             </div>
-                            <div class="item-img" data-src="resources/image/<?php echo $product['img_little_3'];?>">
-                                <img src="resources/image/<?php echo $product['img_little_3'];?>"  alt="image">
+                            <div class="item-img" data-src="resources/image/products/<?php echo $product['img_little_3'];?>">
+                                <img src="resources/image/products/<?php echo $product['img_little_3'];?>"  alt="image">
                             </div>
                         </div>
                         <div class="product-image-container">
                             <a href="product.html" target="_self" title="Chicken swinesha" class="img_a">
-                                <img src="resources/image/<?php echo $product['img'];?>" class="img-1 img-responsive" alt="image">
+                                <img src="resources/image/products/<?php echo $product['img'];?>" class="img-1 img-responsive" alt="image">
                             </a>
                         </div>
                         <!-- -->
